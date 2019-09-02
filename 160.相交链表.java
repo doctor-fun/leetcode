@@ -13,7 +13,9 @@ class ListNode {
           next = null;
       }
 }
-
+//设交点及以后部分为c，交点前A的部分为a,B的部分为b
+//可知:a+c+b=b+c+a
+//所以a+c为链A遍历完它开始遍历b，b+c为链B,遍历完它开始遍历a，最终会因为节点个数的原因汇聚到交叉点，两个节点相等（首地址）即为结果节点(null或者交叉节点)
  class Solution1 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
             ListNode l1 = headA, l2 = headB;
@@ -24,7 +26,7 @@ class ListNode {
             return l1;
     }
 }
-class Main1{
+class Main{
     public static void main(String[] args){
         Solution1 solution1=new Solution1();
         ListNode head_a=new ListNode(0);
