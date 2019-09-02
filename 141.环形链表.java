@@ -24,7 +24,7 @@ class ListNode {
 }
 //停下来的条件两个节点相等，
 //循环终止条件,无论哪个跑到结尾都终止，因为l2多跑一步，所以每次让其跑，都要判断l2.next是否为null
-class Solution1{
+class Solution{
     public boolean hasCycle(ListNode head) {
         if(head==null){
             return false;

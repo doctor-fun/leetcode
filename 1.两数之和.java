@@ -5,7 +5,7 @@ import java.util.HashMap;
  *
  * [1] 两数之和
  */
-class Solution1 {
+class Solution {
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> tracker = new HashMap<Integer, Integer>();
         int len = nums.length;

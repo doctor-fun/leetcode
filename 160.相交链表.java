@@ -22,11 +22,10 @@ class ListNode {
                 l2 = (l2 == null) ? headA : l2.next;
             }
             return l1;
-        
     }
 }
-class Main{
-    public static void main(String[] args) {
+class Main1{
+    public static void main(String[] args){
         Solution1 solution1=new Solution1();
         ListNode head_a=new ListNode(0);
         ListNode Head_b=new ListNode(3);
