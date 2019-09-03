@@ -25,7 +25,7 @@ class Solution {
             while(n-- > 0){
                 fast=fast.next;//此时fast指向正数第二个指针
             }
-            if (fast==null) return head.next;
+            if (fast==null) return head.next;//如果n大于链表长度了，那么就要删掉头结点
             ListNode slow =head;
             while (fast.next!=null){
                 fast=fast.next;//向后移一位
