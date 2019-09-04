@@ -1,9 +1,18 @@
 {
     "configurations": [
+
         {
             "type": "java",
             "name": "CodeLens (Launch) - Main",
-            "cwd":"${workspaceFolder}",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "${file}",
+            "projectName": "leetcode_2cb8c3bc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "cwd": "${workspaceFolder}",
             "request": "launch",
             "mainClass": "${file}",
             "projectName": "leetcode_2cb8c3bc",

@@ -6,7 +6,7 @@ import java.util.HashSet;
  *
  * [345] 反转字符串中的元音字母。这里得确定一下原因
  */
-class Solution {
+class Solution1 {
     private final static HashSet<Character> vowels = new HashSet<>(
         Arrays.asList('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'));
         //题目意思是要找到两个元音字母进行替换
@@ -28,7 +28,7 @@ class Solution {
         return new String(result);
         
     }
-}
+// }
 // class Main{
 //     public static void main(String[] args){
 //         Solution1 solution=new Solution1();
