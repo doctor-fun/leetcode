@@ -20,15 +20,15 @@ class Solution {
         return new int[2];
     }
 }
-class Main{
- //从头开始遍历，得到这个数等待的数key（sum-num[i]），存到map当中，(key,value=i),如果后面出现了key值，即匹配 ,输出即可 
-    public static void main(String[] args){
-        Solution1 solution=new Solution1();
-        int[] nums= {3,4,7,8};
-        int[] result=solution.twoSum(nums, 12);
-        System.out.println(result.toString());    
+// class Main{
+//  //从头开始遍历，得到这个数等待的数key（sum-num[i]），存到map当中，(key,value=i),如果后面出现了key值，即匹配 ,输出即可 
+//     public static void main(String[] args){
+//         Solution1 solution=new Solution1();
+//         int[] nums= {3,4,7,8};
+//         int[] result=solution.twoSum(nums, 12);
+//         System.out.println(result.toString());    
 
-    }
-}
+//     }
+// }
 
 

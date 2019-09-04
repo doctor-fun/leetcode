@@ -41,21 +41,21 @@ class Solution{
         
     }
 }
-class Main{
+// class Main{
 
-  public static void main(String[] args){
-    Solution1 solution=new  Solution1();
-    ListNode head=new ListNode(3);
-    ListNode Node_1=new ListNode(2);
-    head.next=Node_1;
-    ListNode Node_2=new ListNode(0);
-    Node_1.next=Node_2;
-    ListNode Node_3=new ListNode(4);
-    Node_2.next=Node_3;
-    Node_3.next=Node_1;
-    boolean flag= solution.hasCycle(head);
-    System.out.println(flag);
-  }
+//   public static void main(String[] args){
+//     Solution1 solution=new  Solution1();
+//     ListNode head=new ListNode(3);
+//     ListNode Node_1=new ListNode(2);
+//     head.next=Node_1;
+//     ListNode Node_2=new ListNode(0);
+//     Node_1.next=Node_2;
+//     ListNode Node_3=new ListNode(4);
+//     Node_2.next=Node_3;
+//     Node_3.next=Node_1;
+//     boolean flag= solution.hasCycle(head);
+//     System.out.println(flag);
+//   }
 }
 
 
