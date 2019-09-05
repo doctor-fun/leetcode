@@ -7,7 +7,7 @@ import java.util.Map;
  * [128] 最长连续序列
  */
 //找到连续数的下边界，然后从下边界开始网上遍历，
-class Solution1 {
+class Solution{
     public int longestConsecutive(int[] nums) {
         Map<Integer,Integer> countMap=new HashMap<>();
         for(int num : nums){
@@ -18,11 +18,14 @@ class Solution1 {
         int max=0;
         for(int num:nums){
             int left =findtheleft(countMap,num);
-            for(int item=left;item)
-                
-            
+            int i =1;
+            while(countMap.containsKey(left)){
+                left=left+i;
+                ++i;
+            }
+            max=Math.max(i,max); 
         }
-        
+        return max;
     }
     private int findtheleft(Map<Integer,Integer> countmap,int num){
         while(countmap.containsKey(num-1)){
@@ -31,12 +34,12 @@ class Solution1 {
         return num;
 
     }
-}
-class Main{
-    public static void main(String[] args){
-        Solution1 solution = new Solution1();
-        int[] nums={100, 4, 200, 1, 3, 2};
-        int result= solution.longestConsecutive(nums);
-        System.out.println(result);
-    }
-}
+ }
+// class Main{
+//     public static void main(String[] args){
+//         Solution1 solution = new Solution1();
+//         int[] nums={100, 4, 200, 1, 3, 2};
+//         int result= solution.longestConsecutive(nums);
+//         System.out.println(result);
+//     }
+// }
