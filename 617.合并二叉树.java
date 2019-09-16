@@ -12,7 +12,7 @@
  }
  //这道题不用树高一致
 //重新生成树，
-//想象成
+//只考虑上下关系，考虑各种情况，生成树
 class Solution {
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
         if(t1==null && t2==null)return null;
