@@ -12,6 +12,8 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+
+ //递归的本质可以当成普通函数来处理，要求获得返回值的时候不要去考虑细节
 class Solution {
     private int sum =0;
     public int sumOfLeftLeaves(TreeNode root) {
